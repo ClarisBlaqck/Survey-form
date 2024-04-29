@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title> html and css basics</title>
+  </head>
+  <body>
+    <form action="" id="survey-form">
+      <h1 id="title"> Basic HTML and CSS </h1>
+      <p id="description"> This is to asses knowledge of basic html and css properties
+      <fieldset>
+        <Label id="name-label">Name
+          <input id="name" type="text" required placeholder="Enter Name"/>
+        </label><br>
+      <Label id="email-label">Email
+        <input id="email" type="email" required placeholder="Enter email" />
+      </Label><br>
+      <Label id="number-label">Age
+        <input id="number" type="number" min="2" max="98" placeholder="Enter Age" />
+      </Label>  
+      </fieldset>
+      <fieldset>
+        <label>
+          What is your favorite feature of freeCodeCamp?
+          <select id="dropdown">
+            <option value="">Select one</option>
+            <option value="1">City meetups</option>
+            <option value="2">Forum</option>
+            <option value="3">Wiki</option>
+            <option value="4">Videos</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label> Which of these was most difficult to grasp?<br>
+       <label for="css"><input type="radio" name="level" id="css" class="inline" value="css" />CSS</label><br>
+        <label><input type="radio" id="html" class="inline" name="level" value="hmtl" />HTML</label><br>
+        <label><input type="radio" id="both" class="inline" name="level" value="both" />Both
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          What other courses do you hope to complete with FreeCodeCamp? (Check all that apply)</label><br>
+          <label for="back-end"><input type="checkbox" value="back-end" id="back-end" class="inline" />Back-End Development</label><br>
+          <label for="front-end"><input type="checkbox" value="front-end" id="front-end" class="inline" /> Front-End Development</label><br>
+          <label for="data-science"><input type="checkbox" value="data science" id="data-science" class="inline" />Data Science</label><br>
+          <label for="ai"><input type="checkbox" value="AI" id="ai" class="inline">AI</input>
+         </label>
+      </fieldset>
+     
+       <label> Provide any further info:
+     <textarea id="textarea" rows="6" cols="37" placeholder="Type a bio">
+       </textarea>
+       </label>
+
+
+     <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+</html>
